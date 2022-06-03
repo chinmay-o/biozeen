@@ -40,12 +40,21 @@ body {
 
 
 /* header section start */
+#background-video {
+  width: 100vw;
+  height: -webkit-fill-available;
+  object-fit: cover;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
 .header-section-bg {
 
-  background-image: url(../images/dumm.jpg);
-  background-repeat: no-repeat;
   position: relative;
-  background-size: cover;
 }
 
 .first-section-text {
@@ -273,5 +282,11 @@ footer li a:hover {
 
     right: 36%;
     bottom: 15%;
+  }
+
+  .px-sm {
+
+    padding-left: 0 !important;
+    padding-right: 0;
   }
 }
