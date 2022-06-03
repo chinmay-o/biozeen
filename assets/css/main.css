@@ -252,3 +252,17 @@ footer li a:hover {
   color: white;
 }
 /* footer section end */
+
+@media only screen and (max-width: 768px) {
+
+  .first-section-text {
+
+    padding-bottom: 6vh;
+  }
+
+  .video-play-button {
+
+    right: 42%;
+    bottom: 16%;
+  }
+}
