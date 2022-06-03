@@ -58,6 +58,7 @@ body {
 .inset-video {
 
   position: relative;
+  overflow: hidden;
 }
 
 .video-play-button {

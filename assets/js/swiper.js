@@ -32,3 +32,12 @@ var swiperA = new Swiper("#mySwiper", {
     prevEl: '.swiper-button-prev',
   },
 });
+
+var swiperB = new Swiper("#myTextSwiper", {
+  slidesPerView: 1,
+  spaceBetween: 10,
+  navigation: {
+    nextElo: '.swiper-button-next',
+    prevElo: '.swiper-button-prev',
+  },
+});
