@@ -41,6 +41,7 @@ body {
 
 /* header section start */
 #background-video {
+
   width: 100vw;
   height: -webkit-fill-available;
   object-fit: cover;
@@ -216,6 +217,8 @@ body {
 .swiper-slide img {
 
   filter: grayscale(100%);
+  display: block;
+  margin: auto;
 }
 
 .swiper-slide img:hover {
@@ -273,6 +276,12 @@ footer li a:hover {
 
     right: 42%;
     bottom: 16%;
+  }
+
+  .portfolio-icon {
+
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
   }
 }
 
