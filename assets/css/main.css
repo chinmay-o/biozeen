@@ -1,0 +1,251 @@
+
+/* Universal Conditions Start */
+body {
+
+  font-family: 'Montserrat', sans-serif;
+}
+
+.primary-button {
+
+  border-radius: 25px;
+  background-color: #329d4d;
+  border-color: #329d4d;
+}
+
+.primary-button:hover {
+
+  background-color: #5feb64;
+  border-color: #5feb64;
+}
+
+.section-padding {
+
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+/* Universal Conditions End */
+
+/* navigation bar start */
+.nav-item a {
+
+  color: black;
+  font-size: 18px;
+}
+
+.navbar-toggler:focus {
+
+  box-shadow: 0 0 0 0;
+}
+/* navigation bar end */
+
+
+/* header section start */
+.header-section-bg {
+
+  background-image: url(../images/dumm.jpg);
+  background-repeat: no-repeat;
+  position: relative;
+  background-size: cover;
+}
+
+.first-section-text {
+
+  padding-top: 30vh;
+  padding-bottom: 30vh;
+  color: white;
+}
+
+.inset-video {
+
+  position: relative;
+}
+
+.video-play-button {
+
+  position: absolute;
+  right: 23%;
+  bottom: 37%;
+}
+
+.video-play-button img {
+
+  width: 120px;
+}
+
+.video-play-button:hover {
+
+  transform: scale(1.2);
+  transition: .2s ease-out;
+}
+
+.video-pocket {
+
+  display: block;
+  margin: auto;
+  width: 340px;
+  height: 340px;
+  /* max-width: 60%; */
+  transform: rotate(45deg);
+  overflow: hidden;
+  border-radius: 80px;
+  background-image: url(../images/DNA.png);
+  background-size: cover;
+  background-position: right;
+}
+/* header section end */
+
+/* intro section start */
+.intro-detail {
+
+  background: #329d4d;
+  color: white;
+  margin-bottom: 40px;
+}
+/* intro section end */
+
+/* profile section start */
+.profile-pocket {
+
+  overflow: hidden;
+}
+
+.profile-img {
+
+  display: block;
+  margin: auto;
+  width: 340px;
+  height: 340px;
+  /* max-width: 60%; */
+  transform: rotate(45deg);
+  overflow: hidden;
+  border-radius: 80px;
+  background-image: url(../images/DNA.png);
+  background-size: cover;
+  background-position: right;
+}
+
+.profile-grid {
+
+  background: white;
+  box-shadow: 0px 0px 4px 4px #8888882b;
+  border-radius: 16px;
+}
+
+.profile-grid:hover {
+
+  transform: scale(1.06);
+  transition: .2s ease-out;
+}
+
+.profile-grid img {
+
+  display: block;
+  margin: auto;
+}
+/* profile section end */
+
+/* portfolio section start */
+.portfolio-icon {
+
+  background-color: #3e5460;
+  border-top-left-radius: 16px;
+  border-bottom-left-radius: 16px;
+}
+
+.portfolio-grid img {
+
+  display: block;
+  margin: auto;
+}
+
+.portfolio-img {
+
+  overflow: hidden;
+}
+/* portfolio section end */
+
+/* quick links start */
+.quick-link-grid {
+
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 16px;
+  display: grid;
+  align-items: flex-end;
+}
+
+.grid-text-layer {
+
+  color: white;
+  padding-left: 18px;
+  padding-top: 6px;
+  background-color: #329d4d;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+}
+/* quick links end */
+
+/* contact section start */
+.contact-section {
+
+  background-color: #3f5460;
+  color: white;
+}
+
+.news-section {
+
+  height: 264px;
+  overflow: scroll;
+}
+/* contact section end */
+
+/* client section start */
+.swiper-slide img {
+
+  filter: grayscale(100%);
+}
+
+.swiper-slide img:hover {
+
+  filter: grayscale(0);
+}
+/* client section end */
+
+/* footer section start */
+footer {
+
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #3f5460;
+  color: #ffff;
+}
+
+footer ul {
+
+  list-style-type: none;
+}
+
+footer li {
+
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+footer li a {
+
+  color: white;
+  text-decoration: none;
+}
+
+footer li a:hover {
+
+  color: #329d4d;
+}
+
+.footer-copyright {
+
+  background-color: #253138;
+  color: white;
+}
+/* footer section end */
