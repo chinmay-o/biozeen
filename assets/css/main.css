@@ -266,3 +266,12 @@ footer li a:hover {
     bottom: 16%;
   }
 }
+
+@media only screen and (max-width: 600px) {
+
+  .video-play-button {
+
+    right: 36%;
+    bottom: 15%;
+  }
+}
