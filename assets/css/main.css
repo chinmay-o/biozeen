@@ -265,6 +265,8 @@ footer li a:hover {
 }
 /* footer section end */
 
+
+/* Mobile Viewport */
 @media only screen and (max-width: 768px) {
 
   .first-section-text {
