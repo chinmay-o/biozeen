@@ -18,10 +18,30 @@ body {
   border-color: #5feb64;
 }
 
+.sec-button {
+
+  border-radius: 25px;
+  background-color: #ffff;
+  border-color: #ffff;
+  color: #329d4d !important;
+}
+
+.sec-button:hover {
+
+  background-color: #329d4d;
+  border-color: #329d4d;
+  color: #ffff !important;
+}
+
 .section-padding {
 
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+.topic-heading {
+
+  color: #329d4d;
 }
 /* Universal Conditions End */
 
@@ -132,9 +152,9 @@ body {
   transform: rotate(45deg);
   overflow: hidden;
   border-radius: 80px;
-  background-image: url(../images/DNA.png);
+  background-image: url(../images/pharmaceutical01.jpg);
   background-size: cover;
-  background-position: right;
+  background-position: top;
 }
 
 .profile-grid {
@@ -174,6 +194,17 @@ body {
 .portfolio-img {
 
   overflow: hidden;
+  height: 600px;
+  background-image: url(../images/lab-equipment.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.portfolio-choice h6 {
+
+  background-color: #329d4d;
+  border-radius: 8px;
+  padding-left: 10px;
 }
 /* portfolio section end */
 

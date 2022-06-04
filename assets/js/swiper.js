@@ -36,7 +36,12 @@ var swiperA = new Swiper("#mySwiper", {
 var swiperB = new Swiper("#myTextSwiper", {
   slidesPerView: 1,
   spaceBetween: 10,
+  autoplay: {
+
+   delay: 5000,
+  },
   navigation: {
+
     nextElo: '.swiper-button-next',
     prevElo: '.swiper-button-prev',
   },
