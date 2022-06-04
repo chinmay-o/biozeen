@@ -185,6 +185,11 @@ body {
   border-bottom-left-radius: 16px;
 }
 
+.portfolio-grid {
+
+  color: #ffff;
+}
+
 .portfolio-grid img {
 
   display: block;
@@ -293,6 +298,11 @@ footer li a:hover {
 
   background-color: #253138;
   color: white;
+}
+
+.footer-copyright p {
+
+  font-size: 12px;
 }
 /* footer section end */
 
