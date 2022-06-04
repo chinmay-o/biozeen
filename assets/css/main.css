@@ -101,7 +101,7 @@ body {
   transform: rotate(45deg);
   overflow: hidden;
   border-radius: 80px;
-  background-image: url(../images/DNA.png);
+  /* background-image: url(../images/DNA.gif); */
   background-size: cover;
   background-position: right;
 }
