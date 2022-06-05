@@ -13,15 +13,15 @@ $('.portfolio-choice h6').click(function(event) {
 
     if (status == "portfolio-choice01") {
 
-      $(".portfolio-img").css("background-image", "url(../assets/images/lab-equipment.jpg)");
+      $(".portfolio-img").css("background-image", "url(../biozeen/assets/images/lab-equipment.jpg)");
     }
     else if (status == "portfolio-choice02") {
 
-      $(".portfolio-img").css("background-image", "url(../assets/images/support-in-biotech.jpg)");
+      $(".portfolio-img").css("background-image", "url(../biozeen/assets/images/support-in-biotech.jpg)");
     }
     else if (status == "portfolio-choice03") {
 
-      $(".portfolio-img").css("background-image", "url(../assets/images/insight-in-biotech.jpg)");
+      $(".portfolio-img").css("background-image", "url(../biozeen/assets/images/insight-in-biotech.jpg)");
     }
 });
 
