@@ -46,3 +46,38 @@ var swiperB = new Swiper("#myTextSwiper", {
     prevElo: '.swiper-button-prev',
   },
 });
+
+var swiperC = new Swiper("#gallerySwiper", {
+  slidesPerView: 1,
+  spaceBetween: 2,
+  breakpoints: {
+    500: {
+      slidesPerView: 1,
+      spaceBetween: 2,
+    },
+    600: {
+      slidesPerView: 1,
+      spaceBetween: 2,
+    },
+    700: {
+      slidesPerView: 1.5,
+      spaceBetween: 2,
+    },
+    800: {
+      slidesPerView: 2,
+      spaceBetween: 2,
+    },
+    900: {
+      slidesPerView: 2.5,
+      spaceBetween: 2,
+    },
+    1200: {
+      slidesPerView: 4,
+      spaceBetween: 2,
+    },
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});

@@ -57,9 +57,18 @@ animateValue(objAwards, 0, dataAwards, 800);
 const objClients = document.getElementById("data-clients");
 var dataClients = $("#data-clients").attr('data-clients');
 animateValue(objClients, 0, dataClients, 800);
-
-console.log(dataYear);
-console.log(dataProjects);
-console.log(dataAwards);
-console.log(dataClients);
 // Animating Counter End
+
+// Video Thumbnail Fetch Start
+function thumbnailFetch() {
+
+  $('.card-video-thumbnail').each(function(){
+
+    var videoURL = $(this).attr('data-video-url');
+    var videoID = videoURL.split("/")[3];
+    $(this).css("background-image", "url(https://img.youtube.com/vi/"+videoID+"/0.jpg)");
+  });
+}
+
+thumbnailFetch();
+// Video Thumbnail Fetch End

@@ -229,7 +229,7 @@ a {
 }
 /* portfolio section end */
 
-/* quick links start */
+/* about us start */
 .quick-link-grid {
 
   height: 200px;
@@ -249,7 +249,38 @@ a {
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
 }
-/* quick links end */
+/* about us end */
+
+/* video gallery start */
+.gallery-card {
+
+  height: 260px;
+  width: 300px;
+  border-radius: 16px !important;
+  display: block;
+  margin: auto;
+}
+
+.video-title {
+
+  position: relative;
+}
+
+.video-title i {
+
+  position: absolute;
+  font-size: 42px;
+  color: #329d4d;
+  bottom: 16px;
+  right: 36px;
+}
+
+.card-video-thumbnail {
+
+  background-position: center;
+  height: 70%;
+}
+/* video gallery end */
 
 /* contact section start */
 .contact-section {
