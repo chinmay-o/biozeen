@@ -373,6 +373,11 @@ footer li a:hover {
 
 @media only screen and (max-width: 600px) {
 
+  .portfolio-img {
+
+    height: 300px;
+  }
+
   .video-play-button {
 
     right: 36%;
