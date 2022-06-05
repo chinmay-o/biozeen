@@ -245,7 +245,8 @@ body {
 .news-section {
 
   height: 264px;
-  overflow: scroll;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 /* contact section end */
 
