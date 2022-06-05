@@ -30,6 +30,20 @@
     animation: mover 1s infinite  alternate;
 }
 
+/* #f4e73b#329d4d */
+
+.grid-text-layer {
+  background: linear-gradient(to right, #ffd600 50%, #329d4d 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all .5s ease-out;
+}
+
+.grid-text-layer:hover {
+  background-position: left bottom;
+  color: #000000;
+}
+
 @-webkit-keyframes mover {
 
     0% { transform: translateY(0); }
