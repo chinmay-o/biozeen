@@ -244,9 +244,26 @@ body {
 
 .news-section {
 
-  height: 264px;
+  height: 290px;
   overflow-x: hidden;
   overflow-y: scroll;
+  background-color: #4c6573;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+.news-section::-webkit-scrollbar {
+
+  background-color: gray;
+  width: 6px;
+  border-radius: 10px;
+}
+
+.news-section::-webkit-scrollbar-thumb {
+
+  background-color: #329d4d;
+  width: 6px;
+  border-radius: 10px;
 }
 /* contact section end */
 
