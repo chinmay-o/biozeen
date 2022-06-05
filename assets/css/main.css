@@ -48,7 +48,7 @@ body {
 /* navigation bar start */
 .nav-item a {
 
-  color: black;
+  color: white;
   font-size: 18px;
 }
 
@@ -117,11 +117,9 @@ body {
   margin: auto;
   width: 340px;
   height: 340px;
-  /* max-width: 60%; */
   transform: rotate(45deg);
   overflow: hidden;
   border-radius: 80px;
-  /* background-image: url(../images/DNA.gif); */
   background-size: cover;
   background-position: right;
 }
@@ -133,6 +131,11 @@ body {
   background: #329d4d;
   color: white;
   margin-bottom: 40px;
+}
+
+.achievments-sec h4 {
+
+  font-size: 40px;
 }
 /* intro section end */
 
@@ -207,9 +210,17 @@ body {
 
 .portfolio-choice h6 {
 
-  background-color: #329d4d;
-  border-radius: 8px;
+  background-color: #ffffff;
+  border-radius: 12px;
   padding-left: 10px;
+  cursor: pointer;
+  box-shadow: 0px 0px 4px 4px #8888882b;
+}
+
+#portfolio-choice01 {
+
+  background-color: #329d4d;
+  color: #ffffff;
 }
 /* portfolio section end */
 
@@ -241,7 +252,9 @@ body {
   background-color: #3f5460;
   color: white;
 }
+/* contact section end */
 
+/* News section start */
 .news-section {
 
   height: 290px;
@@ -265,7 +278,12 @@ body {
   width: 6px;
   border-radius: 10px;
 }
-/* contact section end */
+
+.single-news p {
+
+  font-size: 12px;
+}
+/* News section end */
 
 /* client section start */
 .swiper-slide img {
@@ -288,6 +306,7 @@ footer {
   padding-bottom: 60px;
   background-color: #3f5460;
   color: #ffff;
+  font-size: 14px;
 }
 
 footer ul {
@@ -310,6 +329,12 @@ footer li a {
 footer li a:hover {
 
   color: #329d4d;
+}
+
+.social-media-icons i {
+
+  font-size: 20px;
+  margin-right: 20px;
 }
 
 .footer-copyright {
