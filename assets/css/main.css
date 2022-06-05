@@ -43,6 +43,11 @@ body {
 
   color: #329d4d;
 }
+
+a {
+
+  text-decoration: none !important;
+}
 /* Universal Conditions End */
 
 /* navigation bar start */

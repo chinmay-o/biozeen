@@ -30,8 +30,6 @@
     animation: mover 1s infinite  alternate;
 }
 
-/* #f4e73b#329d4d */
-
 .grid-text-layer {
   background: linear-gradient(to right, #ffd600 50%, #329d4d 50%);
   background-size: 200% 100%;
@@ -39,7 +37,8 @@
   transition: all .5s ease-out;
 }
 
-.grid-text-layer:hover {
+.quick-link-grid:hover > .grid-text-layer {
+
   background-position: left bottom;
   color: #000000;
 }
