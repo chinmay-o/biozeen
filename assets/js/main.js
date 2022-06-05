@@ -1,5 +1,5 @@
 
-// Portfolio Choosing
+// Portfolio Choosing Start
 $('.portfolio-choice h6').click(function(event) {
 
     var status = $(this).attr('id');
@@ -25,8 +25,9 @@ $('.portfolio-choice h6').click(function(event) {
       $(".portfolio-img").css("background-image", "url(../biozeen/assets/images/insight-in-biotech.jpg)");
     }
 });
+// Portfolio Choosing End
 
-// Animating Counter
+// Animating Counter Start
 function animateValue(obj, start, end, duration) {
   let startTimestamp = null;
   const step = (timestamp) => {
@@ -41,6 +42,24 @@ function animateValue(obj, start, end, duration) {
   window.requestAnimationFrame(step);
 }
 
-const obj01 = document.getElementById("data-years");
-// var dataYear = $(".achievments-sec span").attr('data-years');
-animateValue(obj, 0, 15, 1000);
+const objYear = document.getElementById("data-years");
+var dataYear = $("#data-years").attr('data-years');
+animateValue(objYear, 0, dataYear, 800);
+
+const objProjects = document.getElementById("data-projects");
+var dataProjects = $("#data-projects").attr('data-projects');
+animateValue(objProjects, 0, dataProjects, 800);
+
+const objAwards = document.getElementById("data-awards");
+var dataAwards = $("#data-awards").attr('data-awards');
+animateValue(objAwards, 0, dataAwards, 800);
+
+const objClients = document.getElementById("data-clients");
+var dataClients = $("#data-clients").attr('data-clients');
+animateValue(objClients, 0, dataClients, 800);
+
+console.log(dataYear);
+console.log(dataProjects);
+console.log(dataAwards);
+console.log(dataClients);
+// Animating Counter End
