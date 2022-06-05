@@ -1,4 +1,5 @@
 
+// Portfolio Choosing
 $('.portfolio-choice h6').click(function(event) {
 
     var status = $(this).attr('id');
@@ -25,7 +26,21 @@ $('.portfolio-choice h6').click(function(event) {
     }
 });
 
-// function optionSelector() {
-//
-//   console.log("Running");
-// }
+// Animating Counter
+function animateValue(obj, start, end, duration) {
+  let startTimestamp = null;
+  const step = (timestamp) => {
+
+    if (!startTimestamp) startTimestamp = timestamp;
+    const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+    obj.innerHTML = Math.floor(progress * (end - start) + start);
+    if (progress < 1) {
+      window.requestAnimationFrame(step);
+    }
+  };
+  window.requestAnimationFrame(step);
+}
+
+const obj01 = document.getElementById("data-years");
+// var dataYear = $(".achievments-sec span").attr('data-years');
+animateValue(obj, 0, 15, 1000);
