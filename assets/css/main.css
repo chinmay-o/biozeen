@@ -357,6 +357,14 @@ footer li a:hover {
 
 
 /* Mobile Viewport */
+@media only screen and (max-width: 991px) {
+
+  .quick-link-section {
+
+    flex-direction: column-reverse;
+  }
+}
+
 @media only screen and (max-width: 768px) {
 
   .first-section-text {
