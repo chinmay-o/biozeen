@@ -1,14 +1,12 @@
-
-// Scroll Menu Change Start
 $(document).ready(function(){
   $(window).scroll(function(){
   	var scroll = $(window).scrollTop();
 	  if (scroll > 80) {
+
 	    $(".navbar").addClass("navbar-onscroll");
       $(".nav-item a").css("color", "black");
       $(".nav-item a").css("transition", "0.8s");
 	  }
-
 	  else{
 
 		  $(".navbar").removeClass("navbar-onscroll");
@@ -47,35 +45,38 @@ $('.portfolio-choice h6').click(function(event) {
 // Portfolio Choosing End
 
 // Animating Counter Start
-function animateValue(obj, start, end, duration) {
-  let startTimestamp = null;
-  const step = (timestamp) => {
+var a = 0;
+function animateCounterScroll() {
 
-    if (!startTimestamp) startTimestamp = timestamp;
-    const progress = Math.min((timestamp - startTimestamp) / duration, 1);
-    obj.innerHTML = Math.floor(progress * (end - start) + start);
-    if (progress < 1) {
-      window.requestAnimationFrame(step);
+  $(window).scroll(function() {
+
+    var oTop = $('#counter').offset().top - window.innerHeight;
+    if (a == 0 && $(window).scrollTop() > oTop) {
+      $('.counter-value').each(function() {
+        var $this = $(this),
+          countTo = $this.attr('data-count');
+        $({
+          countNum: $this.text()
+        }).animate({
+            countNum: countTo
+          },
+
+          {
+            duration: 2000,
+            easing: 'swing',
+            step: function() {
+              $this.text(Math.floor(this.countNum));
+            },
+            complete: function() {
+              $this.text(this.countNum);
+            }
+          });
+      });
+      a = 1;
     }
-  };
-  window.requestAnimationFrame(step);
+  });
 }
-
-const objYear = document.getElementById("data-years");
-var dataYear = $("#data-years").attr('data-years');
-animateValue(objYear, 0, dataYear, 800);
-
-const objProjects = document.getElementById("data-projects");
-var dataProjects = $("#data-projects").attr('data-projects');
-animateValue(objProjects, 0, dataProjects, 800);
-
-const objAwards = document.getElementById("data-awards");
-var dataAwards = $("#data-awards").attr('data-awards');
-animateValue(objAwards, 0, dataAwards, 800);
-
-const objClients = document.getElementById("data-clients");
-var dataClients = $("#data-clients").attr('data-clients');
-animateValue(objClients, 0, dataClients, 800);
+animateCounterScroll();
 // Animating Counter End
 
 // Video Thumbnail Fetch Start
@@ -88,6 +89,5 @@ function thumbnailFetch() {
     $(this).css("background-image", "url(https://img.youtube.com/vi/"+videoID+"/0.jpg)");
   });
 }
-
 thumbnailFetch();
 // Video Thumbnail Fetch End

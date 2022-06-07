@@ -1,4 +1,50 @@
+/* Universal Start */
+#left {
 
+  opacity: 0;
+}
+
+#right, #rightB {
+
+  opacity: 0;
+}
+
+.animation-right {
+
+  animation: righty 2s forwards;
+  position: relative;
+}
+
+@keyframes righty {
+
+  0% {
+    opacity: 0;
+    right: -200px;
+  }
+
+  100% {
+    opacity: 1;
+    right: 0px;
+  }
+}
+
+.animation-left {
+  animation: lefty 2s forwards;
+  position: relative;
+}
+
+@keyframes lefty {
+  0% {
+    opacity: 0;
+    left: -200px;
+  }
+
+  100% {
+    opacity: 1;
+    left: 10px;
+  }
+}
+/* Universal End */
 
 .inset-video {
     -webkit-animation: mover 1s infinite  alternate;

@@ -5,24 +5,18 @@ body {
   font-family: 'Montserrat', sans-serif;
   overflow-x: hidden;
   overflow-y: scroll;
-  /* scrollbar-color: #329d4d gray; */
 }
 
 body::-webkit-scrollbar {
-
-  background-color: gray;
-  width: 6px;
+  
+  background-color: gray !important;
+  width: 6px !important;
 }
 
 body::-webkit-scrollbar-thumb {
 
-  background-color: #329d4d;
-  width: 6px;
-}
-
-.scrollable-element {
-  
-  scrollbar-color: red yellow;
+  background-color: #329d4d !important;
+  width: 6px !important;
 }
 
 .primary-button {
@@ -463,18 +457,6 @@ footer li a:hover {
 }
 
 @media only screen and (max-width: 600px) {
-
-  body::-webkit-scrollbar {
-
-    background-color: gray;
-    width: 6px;
-  }
-
-  body::-webkit-scrollbar-thumb {
-
-    background-color: #329d4d;
-    width: 6px;
-  }
 
   .portfolio-img {
 
