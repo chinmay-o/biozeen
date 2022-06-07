@@ -1,4 +1,23 @@
 
+// Scroll Menu Change Start
+$(document).ready(function(){
+  $(window).scroll(function(){
+  	var scroll = $(window).scrollTop();
+	  if (scroll > 80) {
+	    $(".navbar").addClass("navbar-onscroll");
+      $(".nav-item a").css("color", "black");
+      $(".nav-item a").css("transition", "0.8s");
+	  }
+
+	  else{
+
+		  $(".navbar").removeClass("navbar-onscroll");
+      $(".nav-item a").css("color", "white");
+      $(".nav-item a").css("transition", "0.8s");
+	  }
+  })
+})
+
 // Portfolio Choosing Start
 $('.portfolio-choice h6').click(function(event) {
 
