@@ -1,10 +1,10 @@
 /* Universal Start */
-#left {
+.right {
 
   opacity: 0;
 }
 
-#right, #rightB {
+.left {
 
   opacity: 0;
 }

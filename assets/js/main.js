@@ -82,7 +82,7 @@ animateCounterScroll();
 // Video Thumbnail Fetch Start
 function thumbnailFetch() {
 
-  $('.card-video-thumbnail').each(function(){
+  $('.card-video-thumbnail').each(function() {
 
     var videoURL = $(this).attr('data-video-url');
     var videoID = videoURL.split("/")[3];
