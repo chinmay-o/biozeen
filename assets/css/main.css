@@ -7,8 +7,13 @@ body {
   overflow-y: scroll;
 }
 
+.btn {
+
+  font-family: 'Montserrat', sans-serif !important;
+}
+
 body::-webkit-scrollbar {
-  
+
   background-color: gray !important;
   width: 6px !important;
 }
@@ -111,6 +116,29 @@ a {
   color: white;
 }
 
+.first-section-text h1 {
+
+  font-weight: bold;
+}
+
+.slider-content {
+
+  min-height: 200px;
+}
+
+.first-section-text .swiper-pagination {
+
+  position: relative !important;
+  padding-top: 20px;
+  padding-left: 2px;
+  text-align: left !important;
+}
+
+.swiper-pagination-bullet-active {
+
+  background-color: #329d4d !important;
+}
+
 .inset-video {
 
   position: relative;
@@ -197,6 +225,13 @@ a {
 
   transform: scale(1.06);
   transition: .2s ease-out;
+  background-color: #329d4d;
+  color: #ffffff;
+}
+
+.profile-grid:hover > img {
+
+  filter: invert();
 }
 
 .profile-grid img {
@@ -229,7 +264,6 @@ a {
 
   overflow: hidden;
   height: 600px;
-  background-image: url(../images/lab-equipment.jpg);
   background-position: center;
   background-size: cover;
 }
@@ -243,12 +277,102 @@ a {
   box-shadow: 0px 0px 4px 4px #8888882b;
 }
 
+.portfolio-choice-button {
+
+  text-align: left;
+  background-color: #329d4d !important;
+  color: #000000;
+}
+
 #portfolio-choice01 {
 
-  background-color: #329d4d;
-  color: #ffffff;
+  background-image: url(../images/lab-equipment.jpg);
+}
+
+#portfolio-choice02 {
+
+  background-image: url(../images/bio-pharma.jpeg);
+}
+
+#portfolio-choice03 {
+
+  background-image: url(../images/insight-in-biotech.jpg);
+}
+
+#portfolio-choice04 {
+
+  background-image: url(../images/support-in-biotech.jpg);
 }
 /* portfolio section end */
+
+/* testimonial section start */
+
+.client_info i {
+
+  font-size: 30px;
+  color: #349d4e;
+}
+
+.testimonial-swiper {
+
+  background-color: #4055610f;
+}
+
+.testimonial-swiper .box {
+
+  display: flex;
+}
+
+.testimonial-swiper .img-box img {
+
+  border-radius: 50%;
+}
+
+.testimonial-swiper .client_info {
+
+  display: flex;
+  justify-content: space-between;
+}
+/* testimonial section end */
+
+/* case study start */
+.case-study {
+
+  width: 200px;
+  display: block;
+  margin: auto;
+}
+
+.case-content {
+
+  position: relative;
+  width: 200px;
+}
+
+.case-content img {
+
+  width: 200px;
+  border-radius: 16px;
+}
+
+.case-study:hover > .case-hover {
+
+  opacity: 1;
+  color: #ffffff;
+  transition: .4s ease-out;
+}
+
+.case-hover {
+
+  opacity: 0;
+  position: absolute;
+  border-radius: 16px;
+  background-color: #329d4dab;
+  bottom: 0;
+  width: 200px;
+  height: -webkit-fill-available;
+}
+/* case study end */
 
 /* about us start */
 .quick-link-grid {
@@ -301,6 +425,18 @@ a {
   background-position: center;
   height: 70%;
 }
+
+.video-playtime {
+
+  position: absolute;
+  font-size: 12px;
+  top: 0;
+  color: white;
+  margin: 10px;
+  background-color: #329d4d;
+  padding: 4px;
+  border-radius: 10px
+}
 /* video gallery end */
 
 /* contact section start */
@@ -342,15 +478,39 @@ a {
 }
 /* News section end */
 
+/* blog section start */
+.blog-body .card {
+
+  width: 340px;
+  border-radius: 16px;
+  /* margin: auto; */
+}
+
+.blog-detail {
+
+  max-height: 180px;
+  overflow: hidden;
+}
+
+.blog-thumb img {
+
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  width: -webkit-fill-available;
+  height: 240px;
+  object-fit: cover;
+  object-position: top;
+}
+
 /* client section start */
-.swiper-slide img {
+.client-slider .swiper-slide img {
 
   filter: grayscale(100%);
   display: block;
   margin: auto;
 }
 
-.swiper-slide img:hover {
+.client-slider .swiper-slide img:hover {
 
   filter: grayscale(0);
 }
@@ -473,5 +633,26 @@ footer li a:hover {
 
     padding-left: 0 !important;
     padding-right: 0;
+  }
+}
+
+@media (max-width: 576px) {
+
+  .testimonial-swiper .box {
+
+    flex-direction: column;
+    padding-right: 48px;
+  }
+
+  .testimonial-swiper .box .img-box {
+    margin: 0;
+    margin-left: 15px;
+    margin-bottom: -55px;
+    z-index: 100;
+  }
+
+  .testimonial-swiper .box .detail-box {
+    background-color: #ffffff;
+    padding: 75px 15px 15px 15px;
   }
 }
